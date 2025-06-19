@@ -1210,9 +1210,6 @@ elseif k == "p" then
         stopanim()
         dancing = true
         task.wait(.005)
-        sound69.SoundId = customasset("Dances/")
-        timeposcur = sound69.TimePosition
-        sound69:Play()
         playanim(109981901340283,.1)
     else
         stopanim()
@@ -1222,10 +1219,31 @@ elseif k == "l" then
         stopanim()
         dancing = true
         task.wait(.005)
-        sound69.SoundId = customasset("Dances/")
+        playanim(73495198884266,.1)
+    else
+        stopanim()
+    end
+elseif k == "leftbracket" then
+    if dancing == false then
+        stopanim()
+        dancing = true
+        task.wait(.005)
+        sound69.SoundId = customasset("Dances/COMBAT GODS.ogg")
         timeposcur = sound69.TimePosition
         sound69:Play()
-        playanim(73495198884266,.1)
+        playanim(120098319390383,2)
+    else
+        stopanim()
+    end
+elseif k == "comma" then
+    if dancing == false then
+        stopanim()
+        dancing = true
+        task.wait(.005)
+        sound69.SoundId = customasset("Dances/COMBAT GODS.ogg")
+        timeposcur = sound69.TimePosition
+        sound69:Play()
+        playanim(84063058197615,2)
     else
         stopanim()
     end
